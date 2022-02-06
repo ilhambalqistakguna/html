@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  color: #367588;
+  background-image:url('../images/background_ssc.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #ffffff;
+}
+
+div {
+  max-width: 1100px;
+  height: 100px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.greatinguser{
+  text-transform: uppercase;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.container{
+  font-family: "Lato", sans-serif;
+  color: #000000;
+  margin-left: 200px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="../index.html">HOME</a>
+  <a href="../login/index.html">LOGIN</a>
+  <br>
+  
+</div>
+
+<div class="main">
+  <div class="greatinguser">
+	<h1>Car Rental</h1>
+	<h3></h3>
+  </div> 
+</div>
+
+<div class="container">
+
+<h3>Sign Up</h3>
+
+
+<fieldset>
+
+<form name="edit_user" method="post" action="db_add_user.php" enctype="multipart/form-data">
+    <table width="80%" border="0" align="center">
+      <tr>
+        <td width="16%">Name</td>  
+        <td width="84%"><input type="text" name="user_name" size="50" value=""/></td>  
+      </tr>  
+	  <tr>
+        <td width="16%">Email</td>
+        <td><input type="text" name="user_email" size="50" value=""/></td>
+      </tr>
+	  <tr>
+        <td width="16%">Phone No</td>
+        <td><input type="text" name="user_tel" size="50" value=""/></td>
+      </tr>
+      <tr>
+        <td width="16%">Address</td>
+        <td><textarea name="user_address" cols="52" rows="3"></textarea></td>
+      </tr>
+      <tr>
+        <td width="16%">Username</td>
+        <td><input type="text" name="username" size="50" value="" /></td> 
+      </tr>
+      <tr>
+        <td width="16%">Password</td>
+        <td><input type="password" name="password" size="50" value="" /></td> 
+      </tr>
+	  <tr>
+	  
+      <tr> 
+        <td colspan="2"><input type="hidden" name="level_id" value="2" />
+      </tr>	  
+	  
+      <tr> 
+        <td colspan="2"><input type="submit" name="submit" value="submit" />
+        <input type="button" name="cancel" value=" Cancel " onclick="location.href='../index.php'" /></td>
+      </tr>
+	  
+    </table>
+</form>
+
+</fieldset>
+ 
+</div>
+   
+</body>
+
+</html> 
+
